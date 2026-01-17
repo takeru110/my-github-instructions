@@ -86,6 +86,12 @@ Assume the following directory structure when suggesting file paths:
 - **Docstrings:** Use Google Style docstrings.
 - **Error Handling:** Wrap critical IO operations in `try-except` blocks and log the error stack trace.
 
+### E. Jupyter Notebooks
+- Use notebooks primarily for exploratory data analysis and model demonstration.
+- Each notebook must start with a markdown cell explaining its purpose. And Each code cell should have a comment explaining its function.
+- Explain each figure or table with markdown cells.
+- Write a labels and legends for all plots in English.
+
 ## 5. Response Behavior
 - **Language:** Respond in **Japanese** (日本語).
 - **Tone:** Professional, concise, and technical.
