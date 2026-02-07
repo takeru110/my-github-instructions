@@ -6,7 +6,7 @@ applyTo: "src/**/*.py"
 
 ## Runtime / dependencies
 
-- Default to the approved libraries are numpy, pandas, pyarrow, scikit-learn, torch, torchvision, Pillow, matplotlib, seaborn, hydra-core, omegaconf, optuna, hydra-optuna-sweeper, tqdm, joblib, opencv-python, scipy.
+- Default to the approved libraries are numpy, pandas, pyarrow, scikit-learn, torch, torchvision, Pillow, matplotlib, seaborn, hydra-core, omegaconf, optuna, hydra-optuna-sweeper, tqdm, joblib, opencv-python, scipy, statsmodels.
 - If another library is clearly a better fit, you may use it.
 
 ## Paths / I-O
