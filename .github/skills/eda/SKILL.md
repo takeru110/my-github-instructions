@@ -1,8 +1,16 @@
+```skill
 ---
-applyTo: "notebooks/**/data_analysis/**/*.ipynb"
+name: eda
+description: Guidelines and templates for exploratory data analysis (EDA) notebooks. Use this skill when performing data analysis, data exploration, or creating EDA notebooks.
+license: MIT
 ---
 
-# Data Analysis Notebook Instructions
+Guidelines and templates for exploratory data analysis (EDA) notebooks. Use this skill when performing data analysis, data exploration, or creating EDA notebooks.
+
+# SKILL: Exploratory Data Analysis (EDA)
+
+## Overview
+Best practices and templates for creating reproducible EDA notebooks.
 
 ## Scope
 - Use EDA notebooks for exploration, hypothesis checks, and communicating findings.
@@ -58,6 +66,39 @@ applyTo: "notebooks/**/data_analysis/**/*.ipynb"
 - Prefer one figure per cell.
 - Add a short markdown takeaway under each figure/table (what it shows and why it matters).
 
-
 ## Language
 - Use Japanese for all Markdown explanations.
+
+### Data Loading and Overview
+
+```python
+from pathlib import Path
+import pandas as pd
+import numpy as np
+
+# Data path
+DATA_PATH = Path("data/raw/your_data.csv")
+
+# Load data
+df = pd.read_csv(DATA_PATH)
+
+# Overview
+print(f"Shape: {df.shape}")
+print(f"Columns: {df.columns.tolist()}")
+df.dtypes
+```
+
+### Data Quality Checks
+
+```python
+# Missing values
+print("Missing values:")
+print(df.isnull().sum())
+
+# Duplicates
+print(f"\nDuplicate rows: {df.duplicated().sum()}")
+
+# Basic statistics
+df.describe()
+```
+

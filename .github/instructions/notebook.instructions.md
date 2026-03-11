@@ -29,12 +29,6 @@ applyTo: "notebooks/**/*.ipynb"
 ## Demo notebook (when inference changes)
 - If you propose/modify prediction or inference code, provide/update `notebooks/<model_name>/demo_prediction.ipynb` that loads a model from `models/<model_name>/`, prepares sample input, runs predictions, and visualizes results when meaningful. Keep it fast.
 
-## Data analysis notebooks (when applicable)
-
-- Always start analysis with data exploration and summary statistics (e.g., shape, describe).
-- Run data quality checks at the beginning (missing values, dtypes, value ranges, duplicates, etc.).
-- Make the missing-data policy explicit and handle it via imputation, removal, or flagging.
-
 ## Language
 - Use Japanese for all explanations.
 - Use English for comments and texts in plots.

@@ -1,5 +1,5 @@
 ---
-applyTo: "docs/internal/**/*.md"
+applyTo: "docs/**/*.md"
 ---
 
 - Include: directory layout, key modules and responsibilities, data flow, model theory, training/eval/inference interfaces, training strategy.
